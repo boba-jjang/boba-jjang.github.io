@@ -7,6 +7,7 @@ import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
 import { RESUME_DATA } from "@/data/resume-data";
 import type { ResumeIcon, IconType } from "@/lib/types";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 // Type-safe icon mapping
 const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
@@ -120,7 +121,25 @@ function ContactButtons({
           />
         </li>
       ))}
+      <li className="ml-0">
+        <ThemeToggle />
+      </li>
+
+      {contact.downloads?.map((dl) => (
+        <li key={dl.url} className="ml-4">
+          <Button
+            variant="outline"
+            className="h-8 px-3 text-xs font-semibold"
+            asChild
+          >
+            <a href={dl.url} download>
+              {dl.label}
+            </a>
+          </Button>
+        </li>
+      ))}
     </ul>
+    
   );
 }
 

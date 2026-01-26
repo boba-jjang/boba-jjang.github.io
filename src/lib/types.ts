@@ -11,6 +11,11 @@ export interface SkillGroup {
   items: string[];
 }
 
+export interface DownloadLink {
+  label: string;
+  url: string; // e.g. "/JWJ-Resume.pdf"
+}
+
 export interface ResumeData {
   name: string;
   initials: string;
@@ -18,6 +23,7 @@ export interface ResumeData {
   locationLink: string;
   about: string;
   summary: string | React.ReactNode;
+  cvUrl: string;
   avatarUrl: string;
   personalWebsiteUrl: string;
   contact: {
@@ -27,6 +33,7 @@ export interface ResumeData {
       url: string;
       icon: IconType;
     }>;
+    downloads?: DownloadLink[];
   };
   education: Array<{
     school: string;

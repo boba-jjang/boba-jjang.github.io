@@ -1,5 +1,4 @@
 import type { ResumeData } from "@/lib/types";
-import profile from "@/images/profile.jpg";
 
 export const RESUME_DATA: ResumeData = {
   name: "Jae-Won Jang",
@@ -12,6 +11,7 @@ export const RESUME_DATA: ResumeData = {
       I am a Senior Cyber Engineer at MITRE with a Ph.D. in Computer Engineering, specializing in software and systems security, control-flow integrity, and secure system design, with experience across compiler- and binary-level security, ARM architectures, and software supply-chain verification.
     </>
   ),
+  cvUrl: "/JWJ-Resume.pdf",
   avatarUrl: "/images/profile.jpg",
   personalWebsiteUrl: "https://jwjang.net",
   contact: {
@@ -28,6 +28,9 @@ export const RESUME_DATA: ResumeData = {
         icon: "linkedin",
       },
     ],
+    downloads: [
+      { label: "Download CV", url: "/JWJ-Resume.pdf" },
+    ]
   },
   education: [
     {
@@ -42,6 +45,8 @@ export const RESUME_DATA: ResumeData = {
       start: "2013",
       end: "2016",
     },
+
+
     {
       school: "University of South Florida",
       degree: "B.S. in Computer Engineering",
