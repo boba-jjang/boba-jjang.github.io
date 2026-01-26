@@ -14,8 +14,8 @@ export class Contact {
   @Field(() => String)
   email: string;
 
-  @Field(() => String)
-  tel: string;
+  @Field(() => String, { nullable: true })
+  tel?: string;
 
   @Field(() => [Social])
   social: Social[];
