@@ -6,6 +6,7 @@ import "./globals.css";
 import type React from "react";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { RESUME_DATA } from "@/data/resume-data";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -84,9 +85,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
-        <ErrorBoundary>{children}</ErrorBoundary>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body className="bg-background text-foreground">
+        <ThemeProvider>
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </ThemeProvider>
       </body>
       <Analytics />
     </html>

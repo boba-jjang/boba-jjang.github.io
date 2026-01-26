@@ -23,10 +23,6 @@ export function Skills({ skills, className }: SkillsProps) {
 
       <div className="mt-3 space-y-2" aria-labelledby="skills-section">
         {skills.map((group) => {
-          // Keep styling consistent with the rest of the resume: subtle borders, white background.
-          const leftClass = "bg-white border border-slate-200";
-          const rightClass = "bg-white border border-slate-200";
-
           return (
             <div
               key={group.category}
@@ -35,8 +31,7 @@ export function Skills({ skills, className }: SkillsProps) {
               {/* Category */}
               <div
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm font-semibold text-foreground",
-                  leftClass
+                  "rounded-md border border-border bg-muted px-3 py-2 text-sm font-semibold text-muted-foreground"
                 )}
               >
                 {group.category}
@@ -45,8 +40,7 @@ export function Skills({ skills, className }: SkillsProps) {
               {/* Items */}
               <div
                 className={cn(
-                  "rounded-md px-3 py-2 font-mono text-xs leading-relaxed text-muted-foreground print:text-[10px]",
-                  rightClass
+                  "rounded-md border border-border bg-card px-3 py-2 font-mono text-xs leading-relaxed text-muted-foreground print:text-[10px]"
                 )}
               >
                 {group.items.join(", ")}
