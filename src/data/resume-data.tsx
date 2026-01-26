@@ -59,7 +59,11 @@ export const RESUME_DATA: ResumeData = {
       company: "MITRE Corporation",
       link: "https://www.mitre.org/who-we-are",
       badges: [
-        "Supply-chain security", "SCA", "TruffleHog", "Containers", "MLS", "Architecture"
+        "Supply-chain security",
+        "Secrets scanning",
+        "Containerization",
+        "MLS",
+        "Trade-space analysis",
       ],
       title: "Senior Cyber Engineer",
       start: "2025",
@@ -87,14 +91,11 @@ export const RESUME_DATA: ResumeData = {
       company: "Virginia Tech",
       link: "https://www.vt.edu/",
       badges: [
-        "Research",
-        "C",
-        "C++",
-        "Assembly",
-        "Python",
-        "LLVM",
-        "Haskell",
-        "Linux Kernel",
+        "Control-flow integrity",
+        "ARM MTE",
+        "Binary rewriting",
+        "Taint analysis",
+        "LLVM/Clang",
       ],
       title: "Research Assistant",
       start: "2018",
@@ -160,11 +161,7 @@ export const RESUME_DATA: ResumeData = {
       company: "Penn State University",
       link: "https://www.psu.edu/",
       badges: [
-        "Research",
-        "Verilog",
-        "Verilog-A",
-        "Circuit Design",
-        "Layout Design",
+        "Hardware security", "Logic obfuscation", "Camouflaging"
       ],
       title: "Research Assistant",
       start: "2016",
@@ -184,11 +181,7 @@ export const RESUME_DATA: ResumeData = {
       company: "University of South Florida",
       link: "https://www.usf.edu/",
       badges: [
-        "Research",
-        "Verilog",
-        "Verilog-A",
-        "Circuit Design",
-        "Layout Design",
+        "Hardware security", "PUFs", "STT-MRAM", "Spintronics"
       ],
       title: "Research Assistant",
       start: "2013",
@@ -208,7 +201,7 @@ export const RESUME_DATA: ResumeData = {
       company: "Intel",
       link: "https://www.intel.com/content/www/us/en/homepage.html",
       badges: [
-        "MongoDB", "Hardware Debugging"
+        "MongoDB", "Hardware debugging", "Analytics"
       ],
       title: "Intern",
       start: "2013",

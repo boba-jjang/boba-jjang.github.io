@@ -114,11 +114,13 @@ export default function ResumePage() {
               </Suspense>
             </SectionErrorBoundary>
 
+            {RESUME_DATA.projects.length > 0 && (
             <SectionErrorBoundary sectionName="Projects">
               <Suspense fallback={<SectionSkeleton lines={5} />}>
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
             </SectionErrorBoundary>
+            )}
           </div>
         </section>
 
