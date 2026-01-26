@@ -4,6 +4,13 @@ export type ResumeIcon = React.ComponentType<React.SVGProps<SVGSVGElement>> | St
 
 export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone";
 
+export type SkillCategory = "Languages" | "Tools" | "Platforms" | "Methods" | "Other";
+
+export interface SkillGroup {
+  category: SkillCategory | (string & {});
+  items: string[];
+}
+
 export interface ResumeData {
   name: string;
   initials: string;
@@ -15,7 +22,6 @@ export interface ResumeData {
   personalWebsiteUrl: string;
   contact: {
     email: string;
-    tel: string;
     social: Array<{
       name: string;
       url: string;
@@ -37,7 +43,8 @@ export interface ResumeData {
     end: string | null;
     description: string | React.ReactNode;
   }>;
-  skills: string[];
+  // skills: string[];
+  skills: SkillGroup[];
   projects: Array<{
     title: string;
     techStack: string[];
@@ -57,7 +64,6 @@ export interface GraphQLSocial {
 
 export interface GraphQLContact {
   email: string;
-  tel: string;
   social: GraphQLSocial[];
 }
 
@@ -132,7 +138,6 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
     personalWebsiteUrl: data.personalWebsiteUrl,
     contact: {
       email: data.contact.email,
-      tel: data.contact.tel,
       social: data.contact.social.map(({ name, url }) => ({ name, url })),
     },
     education: data.education,
@@ -145,7 +150,8 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       end: job.end || "Present",
       description: reactToString(job.description),
     })),
-    skills: data.skills,
+    // skills: data.skills,
+    skills: data.skills.map((g) => `${g.category}: ${g.items.join(", ")}`),
     projects: data.projects.map((project) => ({
       title: project.title,
       techStack: project.techStack,

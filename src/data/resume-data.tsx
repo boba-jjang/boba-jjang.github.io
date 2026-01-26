@@ -1,237 +1,297 @@
 import type { ResumeData } from "@/lib/types";
+import profile from "@/images/profile.jpg";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Jae-Won Jang",
+  initials: "JW",
+  location: "Falls Church, VA",
+  locationLink: "https://maps.app.goo.gl/3LVaKJpkPDXK4MaG7",
+  about: "Security-focused engineer working across software and systems.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      I am a Senior Cyber Engineer at MITRE with a Ph.D. in Computer Engineering, specializing in software and systems security, control-flow integrity, and secure system design, with experience across compiler- and binary-level security, ARM architectures, and software supply-chain verification.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "/images/profile.jpg",
+  personalWebsiteUrl: "https://jwjang.net",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "jw-jang@outlook.com",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/boba-jjang",
         icon: "github",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/jae-won-jang-a93125394/",
         icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Virginia Tech",
+      degree: "Ph.D. in Computer Engineering",
+      start: "2018",
+      end: "2024",
+    },
+    {
+      school: "University of South Florida",
+      degree: "M.S. in Computer Engineering",
+      start: "2013",
+      end: "2016",
+    },
+    {
+      school: "University of South Florida",
+      degree: "B.S. in Computer Engineering",
+      start: "2009",
+      end: "2013",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
+      company: "MITRE Corporation",
+      link: "https://www.mitre.org/who-we-are",
+      badges: [
+        // "On Site", "Cybersecurity", "Systems Security", "Research"
+      ],
+      title: "Senior Cyber Engineer",
       start: "2025",
       end: null,
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
-        </>
-      ),
-    },
-    {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Developed a modular, containerized framework for automated software supply-chain verification, extending
+              TruffleHog to improve secret-scanning and dependency-analysis coverage across source repositories.
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Authored technical documentation and conducted architectural analyses of processor (RISC/CISC) and system
+              design trade-offs to support modernization and performance optimization decisions.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Led technology assessments and integration analyses for multi-level security (MLS), producing feasibility, risk,
+              and trade-space evaluations to guide system design decisions.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Virginia Tech",
+      link: "https://www.vt.edu/",
       badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
+        // "Research",
+        // "C",
+        // "C++",
+        // "Assembly",
+        // "Python",
+        // "LLVM",
+        // "Haskell",
+        // "Linux Kernel",
       ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
+      title: "Research Assistant",
+      start: "2018",
       end: "2024",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Designed and deployed compiler- and binary-level security mechanisms to enforce control-flow integrity
+              and automated data compartmentalization across untrusted code modules.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
+              Integrated the ARM Memory Tagging Extension (MTE) into a compiler toolchain, strengthening runtime
+              memory safety and fault isolation.
             </li>
             <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Implemented static and dynamic taint analysis to identify sensitive data paths and compartmentalization
+              targets, automatically rewriting assembly code to isolate protected data regions.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      company: "Raytheon",
+      link: "https://www.rtx.com/",
+      badges: [
+        // "On Site", "Software Engineering", "Technical Writing"
+      ],
+      title: "Software Engineer",
+      start: "2017",
+      end: "2018",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
           <ul className="list-inside list-disc">
             <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
+              Supported documentation compliance for unclassified deliverables pending clearance activation.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
+      company: "Penn State University",
+      link: "https://www.psu.edu/",
+      badges: [
+        // "Teaching", "Academia"
+      ],
+      title: "Teaching Assistant",
+      start: "2017",
+      end: "2017",
       description: (
         <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
           <ul className="list-inside list-disc">
             <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
+              Taught the course CMPSC 122: Intermediate Programming and led discussion sessions.
             </li>
-            <li>Built and mentored high-performing mobile development team</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
+      company: "Penn State University",
+      link: "https://www.psu.edu/",
+      badges: [
+        // "Research",
+        // "Verilog",
+        // "Verilog-A",
+        // "Circuit Design",
+        // "Layout Design",
+      ],
+      title: "Research Assistant",
+      start: "2016",
+      end: "2017",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Researched hardware security and reverse-engineering countermeasures using transistor-level camouflaging
+              and logic obfuscation.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "University of South Florida",
+      link: "https://www.usf.edu/",
+      badges: [
+        // "Research",
+        // "Verilog",
+        // "Verilog-A",
+        // "Circuit Design",
+        // "Layout Design",
+      ],
+      title: "Research Assistant",
+      start: "2013",
+      end: "2016",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Researched hardware security primitives leveraging CMOS and spintronic memory technologies, exploring
+              MTJ-based techniques to improve PUF stability and STT-MRAM robustness against magnetic/thermal attacks.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "Intel",
+      link: "https://www.intel.com/content/www/us/en/homepage.html",
+      badges: [
+        // "Internship", "MongoDB", "Hardware Debugging"
+      ],
+      title: "Intern",
+      start: "2013",
+      end: "2013",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Development of analytics modules for the AIM Suite project to measure customer engagement with digital
+              displays in the store.
+            </li>
+            <li>
+              Evaluated MongoDB integration for production deployment, assessing scalability, data modeling, and system
+              compatibility.
+            </li>
+          </ul>
+        </>
+      ),
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    {
+      category: "Languages",
+      items: [
+        "Assembly (ARM, x86/x64)",
+        "C",
+        "C++",
+        "Haskell",
+        "Python",
+        "Rust",
+      ],
+    },
+    {
+      category: "Tools",
+      items: [
+        "angr",
+        "Binary Ninja",
+        "CMake",
+        "Docker",
+        "Dyninst",
+        "GDB",
+        "Ghidra",
+        "Intel PIN",
+        "LLVM/Clang",
+        "QEMU",
+        "Radare2",
+      ],
+    },
   ],
   projects: [
-    {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
-    },
+    // {
+    //   title: "Monito",
+    //   techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+    //   description:
+    //     "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+    //   link: {
+    //     label: "monito.dev",
+    //     href: "https://monito.dev/",
+    //   },
+    // },
+    // {
+    //   title: "Consultly",
+    //   techStack: [
+    //     "TypeScript",
+    //     "Next.js",
+    //     "Vite",
+    //     "GraphQL",
+    //     "WebRTC",
+    //     "Tailwind CSS",
+    //     "PostgreSQL",
+    //     "Redis",
+    //   ],
+    //   description:
+    //     "Platform for online consultations with real-time video meetings and scheduling",
+    //   link: {
+    //     label: "consultly.com",
+    //     href: "https://consultly.com/",
+    //   },
+    // },
+    // {
+    //   title: "Minimalist CV",
+    //   techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+    //   description:
+    //     "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+    //   link: {
+    //     label: "Minimalist CV",
+    //     href: "https://github.com/BartoszJarocki/cv",
+    //   },
+    // },
   ],
 } as const;

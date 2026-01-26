@@ -102,7 +102,7 @@ function ContactButtons({
           />
         </li>
       )}
-      {contact.tel && (
+      {/* {contact.tel && (
         <li>
           <SocialButton
             href={`tel:${contact.tel}`}
@@ -110,7 +110,7 @@ function ContactButtons({
             label="Phone"
           />
         </li>
-      )}
+      )} */}
       {contact.social.map((social) => (
         <li key={social.name}>
           <SocialButton
@@ -157,14 +157,14 @@ function PrintContact({
           <span aria-hidden="true">/</span>
         </>
       )}
-      {contact.tel && (
+      {/* {contact.tel && (
         <a
           className="underline hover:text-foreground/70"
           href={`tel:${contact.tel}`}
         >
           {contact.tel}
         </a>
-      )}
+      )} */}
     </div>
   );
 }

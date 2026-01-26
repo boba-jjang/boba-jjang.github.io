@@ -1,4 +1,9 @@
-![cv](https://github.com/BartoszJarocki/cv/assets/1017620/79bdb9fc-0b20-4d2c-aafe-0526ad4a71d2)
+
+<p align="center">
+  <b>All thanks goes to <a href="https://github.com/BartoszJarocki">Bartosz Jarocki</a> for the template.</b>
+</p>
+
+--- 
 
 # Minimalist CV
 
@@ -160,28 +165,6 @@ The app is optimized for printing. For best results:
 - Enable "Background graphics" in print settings
 - Set margins to "Default"
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
-- [Vercel](https://vercel.com/) for hosting and deployment
-- All contributors who have helped improve this project
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/BartoszJarocki">Bartosz Jarocki</a>
-</p>
