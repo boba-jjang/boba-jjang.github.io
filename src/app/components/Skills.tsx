@@ -31,7 +31,7 @@ export function Skills({ skills, className }: SkillsProps) {
               {/* Category */}
               <div
                 className={cn(
-                  "rounded-md border border-border bg-muted px-3 py-2 text-sm font-semibold text-muted-foreground"
+                  "rounded-md border border-border bg-muted px-3 py-2 font-mono  text-xs font-semibold text-foreground bg-card"
                 )}
               >
                 {group.category}
@@ -40,7 +40,7 @@ export function Skills({ skills, className }: SkillsProps) {
               {/* Items */}
               <div
                 className={cn(
-                  "rounded-md border border-border bg-card px-3 py-2 font-mono text-xs leading-relaxed text-muted-foreground print:text-[10px]"
+                  "rounded-md border border-border bg-card px-3 py-2 font-mono text-xs font-semibold leading-relaxed text-muted-foreground print:text-[10px]"
                 )}
               >
                 {group.items.join(", ")}

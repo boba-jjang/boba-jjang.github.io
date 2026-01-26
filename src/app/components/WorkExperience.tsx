@@ -32,7 +32,9 @@ function BadgeList({
         <li key={badge}>
           <Badge
             variant="secondary"
-            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+            // className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"'
+            className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+
           >
             {badge}
           </Badge>
@@ -108,10 +110,6 @@ function WorkExperienceItem({
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
-            <BadgeList
-              className="hidden gap-x-1 sm:inline-flex"
-              badges={badges}
-            />
           </h3>
           <WorkPeriod start={start} end={end} />
         </div>
@@ -125,12 +123,11 @@ function WorkExperienceItem({
         <div className="mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty">
           {description}
         </div>
-        <div className="mt-2">
-          <BadgeList
-            className="-mx-2 flex-wrap gap-1 sm:hidden"
-            badges={badges}
-          />
-        </div>
+         {badges?.length > 0 && (
+          <div className="mt-1.5">
+            <BadgeList className="flex flex-wrap gap-1" badges={badges} />
+          </div>
+        )}
       </CardContent>
     </Card>
   );
