@@ -27,6 +27,11 @@ export const RESUME_DATA: ResumeData = {
         url: "https://www.linkedin.com/in/jae-won-jang-a93125394/",
         icon: "linkedin",
       },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/j1cookbook/",
+        icon: "instagram",
+      },
     ],
     downloads: [
       { label: "Download CV", url: "/JWJ-Resume.pdf" },
@@ -253,13 +258,13 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Learning Rust",
+      techStack: ["Rust"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "Hands-on practice and experiments while learning Rust.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "Learning Rust",
+        href: "https://github.com/boba-jjang/learning-rust",
       },
     },
     // {

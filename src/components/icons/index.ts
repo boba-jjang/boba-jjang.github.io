@@ -1,4 +1,5 @@
 import { GitHubIcon } from "./GitHubIcon";
 import { LinkedInIcon } from "./LinkedInIcon";
+import {InstagramIcon} from "./InstagramIcon";
 
-export { GitHubIcon, LinkedInIcon };
+export { GitHubIcon, LinkedInIcon, InstagramIcon };

@@ -3,7 +3,7 @@ import Image, { type StaticImageData } from "next/image";
 import React from "react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
 import { RESUME_DATA } from "@/data/resume-data";
 import type { ResumeIcon, IconType } from "@/lib/types";
@@ -13,6 +13,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
+  instagram: InstagramIcon,
   x: XIcon,
   globe: GlobeIcon,
   mail: MailIcon,
