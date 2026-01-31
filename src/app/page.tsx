@@ -11,6 +11,7 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Summary } from "./components/Summary";
 import { WorkExperience } from "./components/WorkExperience";
+import { Background } from "./components/Background";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,

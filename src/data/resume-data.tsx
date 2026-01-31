@@ -1,4 +1,5 @@
 import type { ResumeData } from "@/lib/types";
+import { BackgroundStory } from "./background";
 
 export const RESUME_DATA: ResumeData = {
   name: "Jae-Won Jang",
@@ -9,6 +10,16 @@ export const RESUME_DATA: ResumeData = {
   summary: (
     <>
       I am a Senior Cyber Engineer at MITRE with a Ph.D. in Computer Engineering, specializing in software and systems security, control-flow integrity, and secure system design, with experience across compiler- and binary-level security, ARM architectures, and software supply-chain verification.
+
+      <details className="mt-4">
+        <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          More about my background
+        </summary>
+
+        <div className="mt-3 rounded-md border border-border bg-muted/30 p-4 text-sm leading-relaxed text-foreground/90 space-y-4">
+          <BackgroundStory />
+        </div>
+      </details>
     </>
   ),
   cvUrl: "/JWJ-Resume.pdf",
@@ -47,8 +58,8 @@ export const RESUME_DATA: ResumeData = {
     {
       school: "University of South Florida",
       degree: "M.S. in Computer Engineering",
-      start: "2013",
-      end: "2016",
+      start: "2014",
+      end: "2015",
     },
 
 
