@@ -76,8 +76,8 @@ export const RESUME_DATA: ResumeData = {
       link: "https://www.mitre.org/who-we-are",
       badges: [
         "Supply-chain security",
-        "Secrets scanning",
-        "Containerization",
+        "SELinux",
+        "Rust",
         "MLS",
         "Trade-space analysis",
       ],
