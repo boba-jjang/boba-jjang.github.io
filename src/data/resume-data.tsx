@@ -252,16 +252,16 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   projects: [
-    // {
-    //   title: "Monito",
-    //   techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-    //   description:
-    //     "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-    //   link: {
-    //     label: "monito.dev",
-    //     href: "https://monito.dev/",
-    //   },
-    // },
+    {
+      title: "Monito",
+      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      description:
+        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+      link: {
+        label: "monito.dev",
+        href: "https://monito.dev/",
+      },
+    },
     // {
     //   title: "Consultly",
     //   techStack: [
