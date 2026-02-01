@@ -269,12 +269,12 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
-      title: "Learning Rust",
+      title: "Rust Up Knowledge",
       techStack: ["Rust"],
       description:
-        "Hands-on practice and experiments while learning Rust.",
+        "A personal Rust knowledge base designed for quick recall and long-term learning.",
       link: {
-        label: "Learning Rust",
+        label: "rust-up-knowledge",
         href: "https://boba-jjang.github.io/rust-up-knowledge/",
       },
     },
