@@ -275,7 +275,7 @@ export const RESUME_DATA: ResumeData = {
         "Hands-on practice and experiments while learning Rust.",
       link: {
         label: "Learning Rust",
-        href: "https://github.com/boba-jjang/learning-rust",
+        href: "https://boba-jjang.github.io/rust-up-knowledge/",
       },
     },
     // {
