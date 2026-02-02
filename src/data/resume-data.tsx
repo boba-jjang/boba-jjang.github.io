@@ -56,20 +56,21 @@ export const RESUME_DATA: ResumeData = {
   education: [
     {
       school: "Virginia Tech",
+      url: "https://www.vt.edu/",
       degree: "Ph.D. in Computer Engineering",
       start: "2018",
       end: "2024",
     },
     {
       school: "University of South Florida",
+      url: "https://www.usf.edu/",
       degree: "M.S. in Computer Engineering",
       start: "2014",
       end: "2015",
     },
-
-
     {
       school: "University of South Florida",
+      url: "https://www.usf.edu/",
       degree: "B.S. in Computer Engineering",
       start: "2009",
       end: "2013",

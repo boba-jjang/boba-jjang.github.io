@@ -24,6 +24,32 @@ function EducationPeriod({ start, end }: EducationPeriodProps) {
   );
 }
 
+interface SchoolLinkProps {
+  school: Education["school"];
+  url?: (Education & { url?: string })["url"];
+}
+
+/**
+ * Renders school name with optional link
+ */
+function SchoolLink({ school, url }: SchoolLinkProps) {
+  if (!url) {
+    return <span className="font-semibold leading-none">{school}</span>;
+  }
+
+  return (
+    <a
+      className="font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${school} website`}
+    >
+      {school}
+    </a>
+  );
+}
+
 interface EducationItemProps {
   education: Education;
 }
@@ -33,26 +59,22 @@ interface EducationItemProps {
  */
 function EducationItem({ education }: EducationItemProps) {
   const { school, start, end, degree } = education;
+  const url = (education as Education & { url?: string }).url;
+
+  const id = `education-${school.toLowerCase().replace(/\s+/g, "-")}`;
 
   return (
     <Card>
       <CardHeader>
         <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3
-            className="font-semibold leading-none"
-            id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
-          >
-            {school}
+          <h3 className="inline-flex items-center gap-x-1 leading-none" id={id}>
+            <SchoolLink school={school} url={url} />
           </h3>
           <EducationPeriod start={start} end={end} />
         </div>
       </CardHeader>
-      <CardContent
-        className="mt-2 text-foreground/80 print:text-[12px]"
-        aria-labelledby={`education-${school
-          .toLowerCase()
-          .replace(/\s+/g, "-")}`}
-      >
+
+      <CardContent className="mt-2 text-foreground/80 print:text-[12px]" aria-labelledby={id}>
         {degree}
       </CardContent>
     </Card>
@@ -73,13 +95,9 @@ export function Education({ education }: EducationListProps) {
       <h2 className="text-xl font-bold" id="education-section">
         Education
       </h2>
-      <div
-        className="space-y-4"
-        role="feed"
-        aria-labelledby="education-section"
-      >
+      <div className="space-y-4" role="feed" aria-labelledby="education-section">
         {education.map((item) => (
-          <article key={item.school}>
+          <article key={`${item.school}-${item.start}`}>
             <EducationItem education={item} />
           </article>
         ))}
