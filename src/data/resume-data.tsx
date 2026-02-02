@@ -39,6 +39,11 @@ export const RESUME_DATA: ResumeData = {
         icon: "linkedin",
       },
       {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?hl=en&user=1f4sH7IAAAAJ",
+        icon: "google-scholar",
+      },
+      {
         name: "Instagram",
         url: "https://www.instagram.com/j1cookbook/",
         icon: "instagram",

@@ -2,7 +2,7 @@ import type { StaticImageData } from "next/image";
 
 export type ResumeIcon = React.ComponentType<React.SVGProps<SVGSVGElement>> | StaticImageData;
 
-export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone" | "instagram";
+export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone" | "instagram" | "google-scholar";
 
 export type SkillCategory = "Languages" | "Tools" | "Platforms" | "Methods" | "Other";
 
