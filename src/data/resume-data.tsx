@@ -284,25 +284,18 @@ export const RESUME_DATA: ResumeData = {
         href: "https://boba-jjang.github.io/rust-up-knowledge/",
       },
     },
-    // {
-    //   title: "Consultly",
-    //   techStack: [
-    //     "TypeScript",
-    //     "Next.js",
-    //     "Vite",
-    //     "GraphQL",
-    //     "WebRTC",
-    //     "Tailwind CSS",
-    //     "PostgreSQL",
-    //     "Redis",
-    //   ],
-    //   description:
-    //     "Platform for online consultations with real-time video meetings and scheduling",
-    //   link: {
-    //     label: "consultly.com",
-    //     href: "https://consultly.com/",
-    //   },
-    // },
+    {
+      title: "Rust Up Algorithms",
+      techStack: [
+        "Rust",
+      ],
+      description:
+        "A personal book that will use Rust to implement data structures and algorithms",
+      link: {
+        label: "rust-up-algorithms",
+        href: "https://boba-jjang.github.io/rust-up-algorithms/",
+      },
+    },
     // {
     //   title: "Minimalist CV",
     //   techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
