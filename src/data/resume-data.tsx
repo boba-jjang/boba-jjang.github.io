@@ -24,7 +24,7 @@ export const RESUME_DATA: ResumeData = {
   ),
   cvUrl: "/JWJ-Resume.pdf",
   avatarUrl: "/images/profile.jpg",
-  personalWebsiteUrl: "https://jwjang.net",
+  personalWebsiteUrl: "https://jwj.fyi",
   contact: {
     email: "jw-jang@outlook.com",
     social: [
