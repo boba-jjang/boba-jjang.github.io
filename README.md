@@ -1,6 +1,6 @@
 
-<p align="center">
-  <b>All thanks goes to <a href="https://github.com/BartoszJarocki">Bartosz Jarocki</a> for the template.</b>
+<p align="center"> 
+  <b>All thanks goes to <a href="https://github.com/BartoszJarocki">Bartosz Jarocki</a> for the template.</b> All the other modifications are done by me.
 </p>
 
 --- 
