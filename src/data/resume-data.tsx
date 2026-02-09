@@ -6,10 +6,20 @@ export const RESUME_DATA: ResumeData = {
   initials: "JW",
   location: "Falls Church, VA",
   locationLink: "https://maps.app.goo.gl/3LVaKJpkPDXK4MaG7",
-  about: "Security-focused engineer working across software and systems.",
+  about: "Security-focused computer engineer who enjoys learning deeply and teaching others.",
   summary: (
     <>
       I am a Senior Cyber Engineer at MITRE with a Ph.D. in Computer Engineering, specializing in software and systems security, control-flow integrity, and secure system design, with experience across compiler- and binary-level security, ARM architectures, and software supply-chain verification.
+      
+      <br />
+      <br />
+
+      Beyond my professional work, I care deeply about learning and teaching.
+      Many of the projects on this site are personal explorations of topics I am
+      actively revisiting—such as computer architecture, Rust, and systems
+      fundamentals. I document and share this work publicly as a way to solidify
+      my own understanding and, hopefully, make the learning process more useful
+      to others.
 
       <details className="mt-4">
         <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -81,11 +91,11 @@ export const RESUME_DATA: ResumeData = {
       company: "MITRE Corporation",
       link: "https://www.mitre.org/who-we-are",
       badges: [
-        "Supply-chain security",
+        "Supply-chain Security",
         "SELinux",
         "Rust",
         "MLS",
-        "Trade-space analysis",
+        "Trade-space Analysis",
       ],
       title: "Senior Cyber Engineer",
       start: "2025",
@@ -113,10 +123,10 @@ export const RESUME_DATA: ResumeData = {
       company: "Virginia Tech",
       link: "https://www.vt.edu/",
       badges: [
-        "Control-flow integrity",
+        "Control-flow Integrity",
         "ARM MTE",
-        "Binary rewriting",
-        "Taint analysis",
+        "Binary Rewriting",
+        "Taint Analysis",
         "LLVM/Clang",
       ],
       title: "Research Assistant",
@@ -183,7 +193,7 @@ export const RESUME_DATA: ResumeData = {
       company: "Penn State University",
       link: "https://www.psu.edu/",
       badges: [
-        "Hardware security", "Logic obfuscation", "Camouflaging"
+        "Hardware Security", "Logic obfuscation", "Camouflaging", "Reverse Engineering"
       ],
       title: "Research Assistant",
       start: "2016",
@@ -192,8 +202,12 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Researched hardware security and reverse-engineering countermeasures using transistor-level camouflaging
-              and logic obfuscation.
+              Researched hardware security and reverse-engineering countermeasures using transistor-level camouflaging and logic obfuscation.
+            </li>
+            <li>
+              Designed and evaluated a method for camouflaging inter-gate connections
+              by modulating transistor threshold voltages, increasing resistance to
+              structural and functional reverse engineering.
             </li>
           </ul>
         </>
@@ -203,7 +217,7 @@ export const RESUME_DATA: ResumeData = {
       company: "University of South Florida",
       link: "https://www.usf.edu/",
       badges: [
-        "Hardware security", "PUFs", "STT-MRAM", "Spintronics"
+        "Hardware Security", "PUFs", "STT-MRAM", "Spintronics", "ASIC Layout"
       ],
       title: "Research Assistant",
       start: "2013",
@@ -212,8 +226,14 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Researched hardware security primitives leveraging CMOS and spintronic memory technologies, exploring
-              MTJ-based techniques to improve PUF stability and STT-MRAM robustness against magnetic/thermal attacks.
+              Investigated hardware security primitives based on CMOS and spintronic
+              memory technologies, including MTJ-based designs to improve PUF
+              stability and STT-MRAM robustness against magnetic and thermal attacks.
+            </li>
+            <li>
+              DDesigned schematics and physical layouts of non-volatile sequential
+              elements using a 65nm process (up to M8 metal), culminating in a full
+              padframe tape-out for prototype fabrication.
             </li>
           </ul>
         </>
@@ -223,7 +243,7 @@ export const RESUME_DATA: ResumeData = {
       company: "Intel",
       link: "https://www.intel.com/content/www/us/en/homepage.html",
       badges: [
-        "MongoDB", "Hardware debugging", "Analytics"
+        "MongoDB", "Hardware Debugging", "Analytics"
       ],
       title: "Intern",
       start: "2013",
@@ -232,12 +252,12 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Development of analytics modules for the AIM Suite project to measure customer engagement with digital
-              displays in the store.
+              Developed analytics modules for the AIM Suite to measure customer
+              engagement with in-store digital displays.
             </li>
             <li>
-              Evaluated MongoDB integration for production deployment, assessing scalability, data modeling, and system
-              compatibility.
+              Evaluated MongoDB for production deployment, analyzing scalability,
+              data modeling trade-offs, and system integration constraints.
             </li>
           </ul>
         </>
