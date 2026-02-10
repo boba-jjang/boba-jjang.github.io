@@ -304,18 +304,18 @@ export const RESUME_DATA: ResumeData = {
         href: "https://jwj.fyi/rust-up-knowledge/",
       },
     },
-    {
-      title: "Rust Up Algorithms",
-      techStack: [
-        "Rust",
-      ],
-      description:
-        "A personal book that will use Rust to implement data structures and algorithms",
-      link: {
-        label: "rust-up-algorithms",
-        href: "https://jwj.fyi/rust-up-algorithms/",
-      },
-    },
+    // {
+    //   title: "Rust Up Algorithms",
+    //   techStack: [
+    //     "Rust",
+    //   ],
+    //   description:
+    //     "A personal book that will use Rust to implement data structures and algorithms",
+    //   link: {
+    //     label: "rust-up-algorithms",
+    //     href: "https://jwj.fyi/rust-up-algorithms/",
+    //   },
+    // },
     // {
     //   title: "Minimalist CV",
     //   techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
