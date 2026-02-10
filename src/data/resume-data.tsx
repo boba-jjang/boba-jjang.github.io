@@ -301,7 +301,7 @@ export const RESUME_DATA: ResumeData = {
         "A personal Rust knowledge base designed for quick recall and long-term learning.",
       link: {
         label: "rust-up-knowledge",
-        href: "https://boba-jjang.github.io/rust-up-knowledge/",
+        href: "https://jwj.fyi/rust-up-knowledge/",
       },
     },
     {
@@ -313,7 +313,7 @@ export const RESUME_DATA: ResumeData = {
         "A personal book that will use Rust to implement data structures and algorithms",
       link: {
         label: "rust-up-algorithms",
-        href: "https://boba-jjang.github.io/rust-up-algorithms/",
+        href: "https://jwj.fyi/rust-up-algorithms/",
       },
     },
     // {
