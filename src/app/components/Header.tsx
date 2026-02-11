@@ -96,7 +96,7 @@ function ContactButtons({
           />
         </li>
       )}
-      {contact.email && (
+      {/* {contact.email && (
         <li>
           <SocialButton
             href={`mailto:${contact.email}`}
@@ -104,7 +104,7 @@ function ContactButtons({
             label="Email"
           />
         </li>
-      )}
+      )} */}
       {/* {contact.tel && (
         <li>
           <SocialButton
