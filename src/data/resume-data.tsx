@@ -55,7 +55,7 @@ export const RESUME_DATA: ResumeData = {
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/j1cookbook/",
+        url: "https://www.instagram.com/j1_cookbook/",
         icon: "instagram",
       },
     ],
