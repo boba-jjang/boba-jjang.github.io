@@ -27,16 +27,11 @@ export function BackgroundStory() {
         preparing for the qualifier exam took a toll, and I ultimately decided
         to step away from the Ph.D. program. This decision was not the result of
         external circumstances or anyone else’s fault. Instead, it came from my
-        own realization that I had underestimated what the Ph.D. journey truly
-        demands.
+        own realization that I had underestimated what the Ph.D. demands.
       </p>
 
       <p>
-        After leaving the program, I spent a year working in industry. During
-        that time, I reflected on what I wanted long-term. Despite the
-        opportunity cost—especially given that{" "}
-        <strong>2018 was a peak hiring period for FAANG and similar companies</strong>, I realized that if I did not try again, I might never have another
-        chance. Therefore, I decided to pursue a Ph.D. once more.
+        After leaving the program, I spent a year working in industry. During that time, I couldn't shake the feeling that something was missing. I had to figure out what I really wanted long-term: was I content climbing the industry ladder, or did I need to give the Ph.D. one more proper shot? Ultimately, I realized that if I didn't give the Ph.D. another genuine attempt, I might never get the chance again. That realization pushed me to return to academia.
       </p>
 
       <p>

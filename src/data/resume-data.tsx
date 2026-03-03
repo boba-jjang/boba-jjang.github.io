@@ -14,12 +14,7 @@ export const RESUME_DATA: ResumeData = {
       <br />
       <br />
 
-      Beyond my professional work, I care deeply about learning and teaching.
-      Many of the projects on this site are personal explorations of topics I am
-      actively revisiting—such as computer architecture, Rust, and systems
-      fundamentals. I document and share this work publicly as a way to solidify
-      my own understanding and, hopefully, make the learning process more useful
-      to others.
+      Alongside my professional work, I have a strong interest in learning and teaching. Many of the projects on this site are personal deep-dives into topics I'm currently revisiting, like Rust. I share this work publicly to help cement my own understanding, and hopefully, to make the learning process a bit easier for anyone else.
 
       <details className="mt-4">
         <summary className="cursor-pointer text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
