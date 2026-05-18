@@ -57,6 +57,7 @@ cv:
         url: https://www.mitre.org/who-we-are
         start_date: 2025
         end_date: Present
+        summary: "Building automated tooling for software supply-chain verification, secure system architecture analysis, and Multi-Level Security prototyping."
         highlights:
           - Developed a modular, containerized framework for automated software supply-chain verification, extending [TruffleHog](https://github.com/trufflesecurity/trufflehog) to improve secret-scanning and dependency-analysis coverage across source repositories.
           - Authored technical documentation and conducted architectural analyses of processor (RISC/CISC) and system design trade-offs to support modernization and performance optimization decisions.
@@ -70,7 +71,7 @@ cv:
         url: https://ssrg.ece.vt.edu/
         start_date: 2018
         end_date: 2024
-        summary: "Advisor: Dr. Binoy Ravindran"
+        summary: "Ph.D. research with Dr. Binoy Ravindran on compiler- and binary-level security: control-flow integrity, ARM Memory Tagging Extension integration, and automated data compartmentalization."
         highlights:
           - Designed and deployed compiler- and binary-level security mechanisms to enforce control-flow integrity and automated data compartmentalization across untrusted code modules.
           - Integrated the ARM Memory Tagging Extension (MTE) into a compiler toolchain, strengthening runtime memory safety and fault isolation.
@@ -82,6 +83,7 @@ cv:
         url: https://www.rtx.com/
         start_date: 2017
         end_date: 2018
+        summary: "Documentation compliance for unclassified deliverables while clearance was processing."
         highlights:
           - Supported documentation compliance for unclassified deliverables pending clearance activation.
 
