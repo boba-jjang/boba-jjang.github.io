@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy site
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -21,28 +21,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Install pnpm FIRST so setup-node can find it for caching.
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          version: 10.28.1
+          ruby-version: "3.3.5"
+          bundler-cache: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: 22
-          cache: pnpm
+          python-version: "3.13"
+          cache: pip
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
 
-      - name: Build (Next.js static export)
-        run: pnpm run build
+      - name: Build
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+
+      - name: Purge unused CSS
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./_site
 
   deploy:
     needs: build

@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/JWJ-Resume.pdf # path to your CV PDF file
+email: jw-jang@outlook.com # your email address
+github_username: boba-jjang # your GitHub username
+linkedin_username: jae-won-jang-a93125394 # your LinkedIn username
+scholar_userid: 1f4sH7IAAAAJ # your Google Scholar ID
+instagram_id: j1_cookbook # your Instagram username
+rss_icon: true # comment this line to hide the RSS icon

@@ -1,0 +1,170 @@
+cv:
+  name: Jae-Won Jang
+  label: Senior Cyber Engineer
+  email: jw-jang@outlook.com
+  image: ""
+  summary: >
+    Security-focused computer engineer with an active Top-Secret clearance and a Ph.D. in
+    Computer Engineering from Virginia Tech. Research interests span software and systems
+    security, control-flow integrity, secure system design, compiler- and binary-level
+    security, ARM architectures, and software supply-chain verification.
+
+  address:
+    city: Falls Church
+    region: VA
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: Virginia Tech
+        location: Blacksburg, VA
+        url: https://www.vt.edu/
+        area: Computer Engineering
+        studyType: Ph.D.
+        start_date: 2018
+        end_date: 2024
+        highlights:
+          - "GPA: 3.74 / 4.00"
+          - 'Thesis: *Enhancing Software Security through Code Diversification Verification, Control-flow Restriction, and Automatic Compartmentalization*'
+          - "Research focus: software verification, control-flow integrity, and automated compartmentalization."
+
+      - institution: University of South Florida
+        location: Tampa, FL
+        url: https://www.usf.edu/
+        area: Computer Engineering
+        studyType: M.S.
+        start_date: 2014
+        end_date: 2015
+        highlights:
+          - "GPA: 3.76 / 4.00"
+          - 'Thesis: *Security of Non-Volatile Memories — Attack Models, Analyses, and Counter-Measures*'
+          - "Research focus: spintronics-based memory security."
+
+      - institution: University of South Florida
+        location: Tampa, FL
+        url: https://www.usf.edu/
+        area: Computer Engineering
+        studyType: B.S.
+        start_date: 2009
+        end_date: 2013
+        highlights:
+          - "GPA: 3.69 / 4.00"
+
+    Experience:
+      - company: MITRE Corporation
+        position: Senior Cyber Engineer
+        location: McLean, VA
+        url: https://www.mitre.org/who-we-are
+        start_date: 2025
+        end_date: Present
+        highlights:
+          - Developed a modular, containerized framework for automated software supply-chain verification, extending [TruffleHog](https://github.com/trufflesecurity/trufflehog) to improve secret-scanning and dependency-analysis coverage across source repositories.
+          - Authored technical documentation and conducted architectural analyses of processor (RISC/CISC) and system design trade-offs to support modernization and performance optimization decisions.
+          - Led the design and deployment of an automated, non-source-artifact assessment pipeline that enables stakeholders to assess contractor proficiency without requiring proprietary source code.
+          - Co-led the architectural design and rapid prototyping of containerized Multi-Level Security (MLS) environments. Developed MVPs to validate robust data protection, labeling challenges, and cross-classification data sharing, directly informing trade-space evaluations for critical federated systems.
+          - Directed automated Infrastructure-as-Code (IaC) analysis workflows and engineered headless system modeling templates (e.g., Cameo), enabling the programmatic extraction of architectural insights from high-level artifacts to conduct predictive risk assessments.
+
+      - company: Virginia Tech
+        position: Research Assistant
+        location: Blacksburg, VA
+        url: https://ssrg.ece.vt.edu/
+        start_date: 2018
+        end_date: 2024
+        summary: "Advisor: Dr. Binoy Ravindran"
+        highlights:
+          - Designed and deployed compiler- and binary-level security mechanisms to enforce control-flow integrity and automated data compartmentalization across untrusted code modules.
+          - Integrated the ARM Memory Tagging Extension (MTE) into a compiler toolchain, strengthening runtime memory safety and fault isolation.
+          - Implemented static and dynamic taint analysis to identify sensitive data paths and compartmentalization targets, automatically rewriting assembly code to isolate protected data regions.
+
+      - company: Raytheon
+        position: Software Engineer
+        location: State College, PA
+        url: https://www.rtx.com/
+        start_date: 2017
+        end_date: 2018
+        highlights:
+          - Supported documentation compliance for unclassified deliverables pending clearance activation.
+
+      - company: Penn State University
+        position: Teaching Assistant
+        location: State College, PA
+        url: https://www.psu.edu/
+        start_date: 2017
+        end_date: 2017
+        highlights:
+          - "Taught CMPSC 122: Intermediate Programming and led weekly discussion sessions."
+
+      - company: Penn State University
+        position: Research Assistant
+        location: State College, PA
+        url: https://www.psu.edu/
+        start_date: 2016
+        end_date: 2017
+        summary: "Advisor: Dr. Swaroop Ghosh"
+        highlights:
+          - Researched hardware security and reverse-engineering countermeasures using transistor-level camouflaging and logic obfuscation.
+
+      - company: University of South Florida
+        position: Research Assistant
+        location: Tampa, FL
+        url: https://www.usf.edu/
+        start_date: 2013
+        end_date: 2016
+        summary: "Advisor: Dr. Swaroop Ghosh"
+        highlights:
+          - Researched hardware security primitives leveraging CMOS and spintronic memory technologies, exploring MTJ-based techniques to improve PUF stability and STT-MRAM robustness against magnetic and thermal attacks.
+
+      - company: Intel
+        position: Undergraduate Intern
+        location: Hillsboro, OR
+        url: https://www.intel.com/
+        start_date: 2013
+        end_date: 2013
+        highlights:
+          - Developed analytics modules for the AIM Suite project to measure customer engagement with in-store digital displays.
+          - Evaluated MongoDB integration for production deployment, assessing scalability, data modeling, and system compatibility.
+
+    Skills:
+      - name: Languages
+        keywords:
+          - Assembly (ARM, x86/64)
+          - C
+          - C++
+          - Haskell
+          - Python
+          - Rust
+          - TypeScript
+          - SQL
+
+      - name: AI & LLMs
+        keywords:
+          - Prompt Engineering
+          - AI-Assisted Development (Claude)
+          - Groq API
+          - LLaMA 3
+          - Whisper
+          - Structured Output Parsing (Zod)
+
+      - name: Web & Cloud
+        keywords:
+          - Next.js (App Router)
+          - React
+          - Tailwind CSS
+          - PostgreSQL
+          - Prisma ORM
+          - Vercel
+          - Clerk
+
+      - name: Systems & Security
+        keywords:
+          - angr
+          - Binary Ninja
+          - CMake
+          - Docker
+          - Dyninst
+          - GDB
+          - Ghidra
+          - Intel PIN
+          - LLVM/Clang
+          - QEMU
+          - Radare2
