@@ -80,11 +80,82 @@ body.sticky-bottom-footer {
   white-space: nowrap;
 }
 
-.experience-highlight {
-  font-size: 0.875rem;
+.experience-summary {
+  font-size: 0.85rem;
   color: var(--global-text-color-light);
   margin: 0;
   line-height: 1.5;
+  font-style: italic;
+}
+
+.experience-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: var(--cursor-error, #cf2d56);
+    text-decoration: none;
+  }
+}
+
+// Distinctive aside block for collapsed "More about my background" story
+details.bio-aside {
+  margin: 1.75rem 0;
+  padding: 1.1rem 1.25rem;
+  background-color: var(--cursor-surface-300, #ebeae5);
+  border-left: 3px solid var(--cursor-accent, #f54e00);
+  border-radius: 4px;
+
+  > summary {
+    cursor: pointer;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--global-text-color-light);
+    list-style: none;
+    user-select: none;
+    transition: color 150ms ease;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: "▸  ";
+      display: inline-block;
+      transition: transform 150ms ease;
+      transform-origin: center;
+    }
+
+    &:hover {
+      color: var(--cursor-error, #cf2d56);
+    }
+  }
+
+  &[open] > summary {
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
+    padding-bottom: 0.6rem;
+
+    &::before {
+      content: "▾  ";
+    }
+  }
+
+  // Tighten typography inside the aside to feel set-apart
+  > *:not(summary) {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Albums hub — 3-column card grid

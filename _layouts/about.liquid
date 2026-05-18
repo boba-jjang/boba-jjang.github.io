@@ -63,12 +63,13 @@ layout: default
               </div>
               <span class="experience-dates">{{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% endif %}</span>
             </div>
-            {% if entry.highlights[0] %}
-              <p class="experience-highlight">{{ entry.highlights[0] }}</p>
+            {% if entry.summary %}
+              <p class="experience-summary">{{ entry.summary }}</p>
             {% endif %}
           </div>
         {% endfor %}
       </div>
+      <a class="experience-link" href="{{ '/cv/' | relative_url }}">full experience on CV →</a>
     {% endif %}
 
     <!-- Latest posts -->

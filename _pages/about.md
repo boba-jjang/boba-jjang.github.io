@@ -30,8 +30,8 @@ I am a Senior Cyber Engineer at [MITRE](https://www.mitre.org/who-we-are) with a
 
 Alongside my professional work, I have a strong interest in learning and teaching. Many of the projects on this site are personal deep-dives into topics I'm currently revisiting, like Rust. I share this work publicly to help cement my own understanding, and hopefully, to make the learning process a bit easier for anyone else.
 
-<details markdown="1">
-<summary><strong>More about my background</strong></summary>
+<details markdown="1" class="bio-aside">
+<summary>More about my background</summary>
 
 I began my Computer Engineering journey as an undergraduate at the **University of South Florida**, where I later continued directly into a Master's program under **[Dr. Swaroop Ghosh](https://pqc-psu.github.io/pennstate-qc-lab/team/swaroop-ghosh)**. After completing my M.S. in 2015, I followed Dr. Ghosh to **Penn State University** to pursue a Ph.D.
 
