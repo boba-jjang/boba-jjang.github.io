@@ -145,6 +145,12 @@ newsletter:
 collections:
   projects:
     output: true
+  recipes:
+    output: true
+    permalink: /albums/homecooking/:path/
+
+# Public R2 base URL for cookbook image assets
+r2_base_url: https://pub-fd13b860c4de4a389cda47ae184c8a40.r2.dev/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -217,6 +223,13 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: recipe
+      images:
+        photoswipe: true
 
 sass:
   style: compressed
