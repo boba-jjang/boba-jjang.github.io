@@ -66,6 +66,6 @@ $cursor-surface-400: #e6e5e0 !default;
 $cursor-surface-500: #e1e0db !default;
 
 // Cursor font families (custom with open-source fallbacks)
-$font-display: "Bricolage Grotesque", "system-ui", "Helvetica Neue", Arial, sans-serif !default;
-$font-serif:   "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif !default;
-$font-mono:    "JetBrains Mono", "ui-monospace", "SFMono-Regular", Menlo, Consolas, monospace !default;
+$font-display: "Bricolage Grotesque", system-ui, "Helvetica Neue", Arial, sans-serif !default;
+$font-body:    "Inter", system-ui, "Helvetica Neue", Arial, sans-serif !default;
+$font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace !default;

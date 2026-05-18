@@ -13,7 +13,8 @@ profile:
     <p><a href="https://www.mitre.org/who-we-are">MITRE Corporation</a></p>
     <p>Falls Church, VA</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # publications moved to /publications page
+show_experience: true # show top 3 experience entries from cv.yml
 social: true # includes social icons at the bottom of the page
 
 announcements:

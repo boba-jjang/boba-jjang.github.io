@@ -48,6 +48,29 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Experience -->
+    {% if page.show_experience and site.data.cv.sections.Experience %}
+      <h2>experience</h2>
+      <div class="experience-list">
+        {% for entry in site.data.cv.sections.Experience limit: 3 %}
+          <div class="experience-entry">
+            <div class="experience-header">
+              <div>
+                <span class="experience-company">
+                  {% if entry.url %}<a href="{{ entry.url }}">{{ entry.company }}</a>{% else %}{{ entry.company }}{% endif %}
+                </span>
+                <span class="experience-role">— {{ entry.position }}</span>
+              </div>
+              <span class="experience-dates">{{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% endif %}</span>
+            </div>
+            {% if entry.highlights[0] %}
+              <p class="experience-highlight">{{ entry.highlights[0] }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>

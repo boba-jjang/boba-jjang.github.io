@@ -4,12 +4,11 @@
 
 @use "variables" as v;
 
-// Three-voice font system: display (gothic), serif (editorial), mono (code)
+// Two-voice font system: display (Bricolage Grotesque), body (Inter), mono (JetBrains Mono)
 body {
-  font-family: v.$font-serif;
-  font-size: 17.28px;
-  line-height: 1.5;
-  font-feature-settings: "cswh" 1;
+  font-family: v.$font-body;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 // Display voice — headings use compressed gothic tracking

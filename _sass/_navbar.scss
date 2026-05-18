@@ -7,7 +7,7 @@
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
-  background-color: rgba(242, 241, 237, 0.85);
+  background-color: color-mix(in srgb, var(--global-bg-color) 85%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 

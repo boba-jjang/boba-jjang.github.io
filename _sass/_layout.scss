@@ -40,9 +40,52 @@ body.sticky-bottom-footer {
   }
 }
 
-// Content layout uses Bootstrap's grid system with responsive columns
-// Main content flows naturally through container-mt-5 and Bootstrap grid classes
-// See _layouts/default.liquid and _includes/projects.liquid for examples
+// Experience section on about page
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-entry {
+  border-left: 2px solid var(--cursor-border, rgba(38, 37, 30, 0.15));
+  padding-left: 1rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.experience-company {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.experience-role {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+
+.experience-dates {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.experience-highlight {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+  line-height: 1.5;
+}
 
 /******************************************************************************
  * Publications
