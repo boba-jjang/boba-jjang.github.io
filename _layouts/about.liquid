@@ -49,10 +49,10 @@ layout: default
     {% endif %}
 
     <!-- Experience -->
-    {% if page.show_experience and site.data.cv.sections.Experience %}
+    {% if page.show_experience and site.data.cv.cv.sections.Experience %}
       <h2>experience</h2>
       <div class="experience-list">
-        {% for entry in site.data.cv.sections.Experience limit: 3 %}
+        {% for entry in site.data.cv.cv.sections.Experience limit: 3 %}
           <div class="experience-entry">
             <div class="experience-header">
               <div>
