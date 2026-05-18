@@ -50,3 +50,22 @@ $back-to-top-width: $back-to-top-diameter;
 
 // Max width default
 $max-content-width: 930px !default;
+
+// Cursor Design System — warm minimalism palette
+$cursor-cream:     #f2f1ed !default;  // page background
+$cursor-dark:      #26251e !default;  // primary text (warm near-black)
+$cursor-orange:    #f54e00 !default;  // accent / primary CTA
+$cursor-crimson:   #cf2d56 !default;  // hover / error state
+$cursor-gold:      #c08532 !default;  // secondary accent
+
+// Surface scale (cream → darker cream)
+$cursor-surface-100: #f7f7f4 !default;
+$cursor-surface-200: #f2f1ed !default;
+$cursor-surface-300: #ebeae5 !default;
+$cursor-surface-400: #e6e5e0 !default;
+$cursor-surface-500: #e1e0db !default;
+
+// Cursor font families (custom with open-source fallbacks)
+$font-display: "Bricolage Grotesque", "system-ui", "Helvetica Neue", Arial, sans-serif !default;
+$font-serif:   "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif !default;
+$font-mono:    "JetBrains Mono", "ui-monospace", "SFMono-Regular", Menlo, Consolas, monospace !default;

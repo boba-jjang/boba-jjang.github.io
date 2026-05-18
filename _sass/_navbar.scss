@@ -6,9 +6,19 @@
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  border-bottom: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
+  background-color: rgba(242, 241, 237, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  .nav-link,
+  .navbar-brand {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+    transition: color 150ms ease;
+  }
 }
 
 .navbar .dropdown-menu,

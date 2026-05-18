@@ -34,23 +34,83 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 }
 
-// Card
-
+// Card — Cursor elevated card style
 .card {
-  background-color: var(--global-card-bg-color);
+  background-color: var(--cursor-surface-400, #e6e5e0);
+  border: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow 200ms ease;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 28px 70px, rgba(0, 0, 0, 0.1) 0px 14px 32px;
+  }
 
   .card-img {
     width: 100%;
     padding-top: 1.25rem;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
   }
 
   .card-title {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.005em;
     color: var(--global-text-color);
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.25rem;
   }
+}
+
+// Tag / badge pills — Cursor secondary pill style
+.badge,
+.tag {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+  background-color: var(--cursor-surface-400, #e6e5e0);
+  color: rgba(38, 37, 30, 0.6);
+  border-radius: 9999px;
+  padding: 3px 10px;
+  border: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: var(--cursor-error, #cf2d56);
+  }
+}
+
+// Buttons — Cursor warm surface style
+.btn-primary,
+.btn {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--cursor-surface-300, #ebeae5);
+  color: var(--global-text-color);
+  border: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: color 150ms ease, box-shadow 150ms ease;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    color: var(--cursor-error, #cf2d56);
+    background-color: var(--cursor-surface-300, #ebeae5);
+    border-color: var(--cursor-border-medium, rgba(38, 37, 30, 0.2));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+
+// Gallery image frame — Cursor print-like treatment
+.pswp-gallery a img,
+img.gallery-img {
+  border: 1px solid var(--cursor-border, rgba(38, 37, 30, 0.1));
+  border-radius: 8px;
 }
 
 // Profile

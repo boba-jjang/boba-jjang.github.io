@@ -6,29 +6,43 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
-  --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$purple-color};
-  --global-hover-color: #{v.$purple-color};
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
-  --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{v.$white-color};
-  --global-highlight-color: #{v.$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$black-color, "red", v.$space: rgb)},
-    #{color.channel(v.$black-color, "green", v.$space: rgb)},
-    #{color.channel(v.$black-color, "blue", v.$space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{v.$white-color};
-  --global-newsletter-bg-color: #{v.$white-color};
-  --global-newsletter-text-color: #{v.$black-color};
+
+  // Cursor warm palette
+  --global-bg-color: #{v.$cursor-cream};
+  --global-code-bg-color: #{v.$cursor-surface-400};
+  --global-text-color: #{v.$cursor-dark};
+  --global-text-color-light: rgba(38, 37, 30, 0.55);
+  --global-theme-color: #{v.$cursor-orange};
+  --global-hover-color: #{v.$cursor-crimson};
+  --global-hover-text-color: #{v.$cursor-cream};
+  --global-footer-bg-color: #{v.$cursor-dark};
+  --global-footer-text-color: rgba(242, 241, 237, 0.65);
+  --global-footer-link-color: #{v.$cursor-cream};
+  --global-distill-app-color: rgba(38, 37, 30, 0.55);
+  --global-divider-color: rgba(38, 37, 30, 0.1);
+  --global-card-bg-color: #{v.$cursor-surface-400};
+  --global-highlight-color: #{v.$cursor-crimson};
+
+  // Cursor surface scale
+  --cursor-surface-100: #{v.$cursor-surface-100};
+  --cursor-surface-200: #{v.$cursor-surface-200};
+  --cursor-surface-300: #{v.$cursor-surface-300};
+  --cursor-surface-400: #{v.$cursor-surface-400};
+  --cursor-surface-500: #{v.$cursor-surface-500};
+
+  // Cursor accent
+  --cursor-accent: #{v.$cursor-orange};
+  --cursor-error: #{v.$cursor-crimson};
+  --cursor-gold: #{v.$cursor-gold};
+
+  // Cursor border (warm brown at 10% — oklab fallback as rgba)
+  --cursor-border: rgba(38, 37, 30, 0.1);
+  --cursor-border-medium: rgba(38, 37, 30, 0.2);
+
+  --global-back-to-top-bg-color: rgba(38, 37, 30, 0.45);
+  --global-back-to-top-text-color: #{v.$cursor-cream};
+  --global-newsletter-bg-color: #{v.$cursor-surface-300};
+  --global-newsletter-text-color: #{v.$cursor-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
