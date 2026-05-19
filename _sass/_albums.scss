@@ -1,0 +1,62 @@
+/******************************************************************************
+ * Albums hub — card grid linking to individual album collections
+ ******************************************************************************/
+
+@use "variables" as v;
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.album-card {
+  display: block;
+  padding: 1.5rem 1.25rem;
+  background-color: var(--cursor-surface-400);
+  border: 1px solid var(--cursor-border);
+  border-radius: 8px;
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: box-shadow 200ms ease, transform 200ms ease;
+
+  &__label {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    margin-bottom: 0.25rem;
+  }
+
+  &__meta {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+    color: var(--global-text-color-light);
+    text-transform: lowercase;
+    margin-bottom: 0.75rem;
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &--live:hover {
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 20px 50px, rgba(0, 0, 0, 0.1) 0px 10px 24px;
+    transform: translateY(-2px);
+
+    .album-card__label {
+      color: var(--cursor-error);
+    }
+  }
+
+  &--stub {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

@@ -54,6 +54,6 @@ There are two lessons I hope to convey through my experience:
 
 If you've read this far and see parts of yourself in this story, feel free to reach out. I'm always happy to share experiences or insights if they might help.
 
-You can contact me at `jw-jang [at] outlook [dot] com`.
+You can contact me at <jw-jang@outlook.com>.
 
 </details>

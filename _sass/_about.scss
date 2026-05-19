@@ -1,0 +1,118 @@
+/******************************************************************************
+ * About page — profile, experience preview, bio-aside disclosure
+ ******************************************************************************/
+
+@use "variables" as v;
+
+.profile {
+  img {
+    width: 100%;
+  }
+}
+
+// Experience preview on the about page (top 3 from cv.yml)
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-entry {
+  border-left: 2px solid var(--cursor-border);
+  padding-left: 1rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.experience-company {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.experience-role {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+
+.experience-dates {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.experience-summary {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.experience-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: var(--cursor-error);
+    text-decoration: none;
+  }
+}
+
+// Quiet inline disclosure for the "more about my background" story —
+// no chrome, just a single muted line that opens into prose.
+details.bio-aside {
+  clear: both;          // break below floating profile image
+  margin: 2.25rem 0 1.75rem;
+
+  > summary {
+    cursor: pointer;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--global-text-color-light);
+    list-style: none;
+    user-select: none;
+    transition: color 150ms ease;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: "▸  ";
+      color: var(--cursor-accent);
+    }
+
+    &:hover {
+      color: var(--cursor-error);
+    }
+  }
+
+  &[open] > summary {
+    margin-bottom: 1rem;
+
+    &::before { content: "▾  "; }
+  }
+
+  > *:not(summary) {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  > *:last-child { margin-bottom: 0; }
+}

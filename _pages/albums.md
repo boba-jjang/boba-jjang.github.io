@@ -15,16 +15,4 @@ nav_order: 4
     <p class="album-card__desc">An archive of the dishes I cook at home, mostly Korean and Japanese, with ingredients and notes for each.</p>
   </a>
 
-  <div class="album-card album-card--stub">
-    <div class="album-card__label">baseball</div>
-    <div class="album-card__meta">coming soon</div>
-    <p class="album-card__desc">Game-day photos and scorecards. Placeholder for now.</p>
-  </div>
-
-  <div class="album-card album-card--stub">
-    <div class="album-card__label">travel</div>
-    <div class="album-card__meta">coming soon</div>
-    <p class="album-card__desc">Trips, landscapes, and street scenes. Placeholder for now.</p>
-  </div>
-
 </div>
